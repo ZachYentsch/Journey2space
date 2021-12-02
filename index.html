@@ -5,19 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journey 2 Space</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    /* This is for wire framing to see our rows/columns */
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
 
-<body>
-    <header class="container-fluid">
-        <div class="row d-flex">
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"
+
+    ] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug">
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col-md-6 justi">
+                    <p>ICON</p>
+                </div>
+                <div class="col-md-6 justify-content-end">
+                    <p>ICON</p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit.</p>
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Features</a>
+                            <a class="nav-item nav-link" href="#">Pricing</a>
+                            <a class="nav-item nav-link disabled" href="#" tabindex="-1"
+                                aria-disabled="true">Disabled</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row bg-primary">
+                <div class="col-12">
+                    <p>testing</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row bg-secondary">
+                <div class=" col-8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corporis accusamus illo
+                        repudiandae, placeat totam perferendis? Itaque aliquid, id facilis fuga optio, distinctio harum
+                        maiores cupiditate eius eaque non nesciunt!</p>
+                </div>
+            </div>
+            <div class="row bg-primary">
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="row bg-secondary">
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="row bg-dark">
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="row bg-primary">
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <div></div>
+        </div>
+    </footer>
+
 
 </body>
 
