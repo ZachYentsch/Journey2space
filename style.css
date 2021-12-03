@@ -1,10 +1,10 @@
 :root{
---primary:;
---secondary:;
---tertiary:;
+--primary:#F0B94C;
+--secondary:#638FB4;
+--tertiary:#C8462D;
 --text: #ffffff;
 --background:black;
---accent:;
+--accent:#C6C6CA;
 }
 
 body{
