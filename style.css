@@ -1,3 +1,16 @@
+:root{
+--primary:;
+--secondary:;
+--tertiary:;
+--text: #ffffff;
+--background:black;
+--accent:;
+}
+
+body{
+    background-color: var(--background);
+}
+
 .flyer-img{
     height: 200px;
     width: 200px;
@@ -23,8 +36,14 @@
 }
 
 .n-quote{
-    color: white;
+    color: var(--text);
     bottom: -15px;
     text-align: end;
     z-index: 1;
+    text-decoration: underline white;
+}
+
+.section-title{
+    color: var(--text);
+    text-align: center;
 }
