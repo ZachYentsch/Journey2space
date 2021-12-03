@@ -31,7 +31,7 @@ body{
     background-size: cover;
     height: 150px;
     width: 800px;
-    bottom: -30px;
+    bottom: 10px;
     z-index: 2;
 }
 
@@ -61,4 +61,11 @@ footer{
 .icon{
     height: 48px;
     width: 48px;
+}
+
+@media (max-width: 768px){
+    .spill-img{
+        
+
+    }
 }
